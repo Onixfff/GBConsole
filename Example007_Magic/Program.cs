@@ -1,8 +1,12 @@
 ﻿Console.Clear();
-
+Random random = new Random();
+int count = 0;
+int max = 3;
+int min = 0;
 int xa = 40, ya = 1,
     xb = 1, yb = 20,
     xc = 80, yc = 20;
+int x = xa, y = ya;
 
 Console.SetCursorPosition(xa,ya);
 Console.WriteLine("+");
@@ -11,13 +15,8 @@ Console.WriteLine("+");
 Console.SetCursorPosition(xc,yc);
 Console.WriteLine("+");
 
-int x = xa, y = ya;
 
-int count = 0;
-int max = 3;
-int min = 0;
-Random random = new Random();
-while(count < 1000)
+while(count < 2)
 {
     int what = random.Next(min, max);
     switch (what)
